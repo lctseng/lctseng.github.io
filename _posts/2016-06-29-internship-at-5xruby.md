@@ -5,6 +5,7 @@ category: experience
 tags: [5xruby, internship]
 title: 5xRuby.tw internship - 擁抱自己所喜愛的那些
 description: 這是我在五倍紅寶石實習了三個月的心得。這段時間收穫很多，也很感謝五倍紅寶石老闆的賞識，在實習最後給了我轉正職的機會。
+banner_image: https://imgur.com/BaYeXpK.jpg
 ---
 
 距離我第一次接觸Ruby程式語言已經至少有五年了，

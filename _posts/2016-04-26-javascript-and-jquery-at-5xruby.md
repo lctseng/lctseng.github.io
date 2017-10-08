@@ -5,6 +5,7 @@ category: experience
 tags: [5xruby, web-develop, course]
 title: JavaScript & jQuery 前端開發入門實戰@5xRuby
 description: 這是我在五倍紅寶石實習時參與上課的心得，這一次的課程是Javascript與JQuery的使用。
+banner_image: https://imgur.com/pKtfgVk.png
 ---
 
 結束了HTML/CSS的前端課程，緊接著是JavaScript與jQuery的部分。
