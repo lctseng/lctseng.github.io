@@ -1,0 +1,4 @@
+---
+slug: rubykaigi
+name: RubyKaigi
+---

@@ -214,6 +214,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll-feed
+  jekyll-paginate
   tzinfo-data
 
 BUNDLED WITH

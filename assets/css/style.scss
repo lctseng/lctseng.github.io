@@ -1,0 +1,62 @@
+---
+---
+
+@import "jekyll-theme-tactile";
+
+$font: 'cwTeXHei', serif;
+
+@font-face {
+  font-family: 'cwTeXHei';
+  font-style: normal;
+  font-weight: 500;
+  src: url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.eot);
+  src: url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.eot?#iefix) format('embedded-opentype'),
+       url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.woff2) format('woff2'),
+       url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.woff) format('woff'),
+       url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.ttf) format('truetype');
+}
+
+
+body {
+  font-family: $font;
+
+}
+
+
+.post-content, .post-description {
+  line-height: 2em;
+
+  ul {
+    padding-left: 20px;
+  }
+
+  li {
+    padding-left: 5px;
+  }
+}
+
+
+header h1 {
+  font-family: $font;
+}
+
+hr.full {
+  background: none;
+  border: solid 1px;
+  color: #DDD;
+  padding-bottom: 0;
+  margin-top: 0;
+  height: 0;
+}
+
+footer {
+  background: none;
+}
+
+.post-description {
+ color: #AAA;
+}
+
+.inner {
+  width: 60%;
+}
