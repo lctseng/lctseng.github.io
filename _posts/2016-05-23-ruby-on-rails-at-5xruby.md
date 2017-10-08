@@ -4,7 +4,7 @@ date:   2016-05-23 13:47:00 +0800
 category: experience
 tags: [5xruby, web-develop, course]
 title: Ruby on Rails 從零開始
-description: 這是我在五倍紅寶石實習時參與上課的心得，在這一系列的課程的最後也是最長的主題：Ruby on Rails
+description: 這是我在五倍紅寶石實習時參與上課的心得，在這一系列的課程的最後也是最長的主題：Ruby on Rails。除了課程心得，這篇文章中還附上了上課時的筆記內容。
 ---
 
 

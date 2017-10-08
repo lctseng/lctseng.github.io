@@ -16,10 +16,63 @@ $font: 'cwTeXHei', serif;
        url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.ttf) format('truetype');
 }
 
+hr {
+  background: transparent url(/assets/images/hr.png) 50% 0 no-repeat;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+a:hover {
+  text-decoration: none;
+  color: red;
+}
+
+a.tag {
+  margin-left: 0.25em;
+  margin-right: 0.25em;
+  font-size: 14px;
+  color: #888;
+}
+
+a.tag:hover{
+  color: #aaa;
+}
+
+li.major {
+  background-image: url(/assets/images/list-icon.png);
+  background-repeat: no-repeat;
+  background-size: auto 1em;
+  background-position: 0 2em;
+  list-style: none;
+  padding-left: 30px;
+}
+
+.badge-light-color {
+  color: black;
+  background-color: #fff0db;
+}
+
+.post-summary {
+  .post-description {
+    color: black;
+  }
+}
+
+$pagination-margin: 5px;
+
+.pagination {
+  .next, .previous {
+    margin-left: $pagination-margin;
+  }
+}
 
 body {
   font-family: $font;
 
+}
+
+.category-and-tags {
+  font-size: 14px;
 }
 
 
@@ -32,6 +85,19 @@ body {
 
   li {
     padding-left: 5px;
+  }
+
+  // level 1 list
+  ul li {
+    list-style-type: disc;
+    // level 2 list
+    ul li{
+      list-style-type: circle;
+      // level 3 list
+      ul li{
+        list-style-type: square;
+      }
+    }
   }
 }
 

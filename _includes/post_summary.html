@@ -1,0 +1,14 @@
+{% assign post = include.post %}
+
+<div class="post-summary">
+  <span class="post-meta">{{ post.date | date: site.date_format }}</span>
+  <h2>
+    <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+  </h2>
+  {% if post.description %}
+    <p class="post-description">
+    {{ post.description }}
+    </p>
+  {% endif %}
+  {% include category_and_tags.html post=post %}
+</div>

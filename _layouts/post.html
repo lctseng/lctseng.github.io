@@ -2,23 +2,18 @@
 layout: default
 ---
 
-{% assign categories = site.my_categories | where: "slug", page.category %}
-{% assign category = categories[0] %}
-{% if category %}
-  {% capture category_content %}<a class="label" href="{{ category.url }}">{{ category.name }}</a>{% endcapture %}
-{% endif %}
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
     <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
     <p class="post-meta">
     <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-      {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-      {{ page.date | date: date_format }}
+      {{ page.date | date: site.date_format }}
     </time>
     {% if page.author %}
       • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
     {% endif %}
+    {% include category_and_tags.html post=page %}
     </p>
     {% if page.description %}
       <p class="post-description">
@@ -33,19 +28,4 @@ layout: default
     {{ content }}
   </div>
 
-  {% if page.tags.size > 0 %}
-    {% capture tags_content %} 標籤：{% endcapture %}
-    {% for page_tag in page.tags %}
-      {% assign tag = site.my_tags | where: "slug", page_tag %}
-      {% if tag %}
-        {% assign tag = tag[0] %}
-        {% capture tags_content_temp %}{{ tags_content }}<a href="{{ tag.url }}">{{ tag.name }}</a>{% if forloop.last == false %}、{% endif %}{% endcapture %}
-        {% assign tags_content = tags_content_temp %}
-      {% endif %}
-    {% endfor %}
-  {% endif %}              
-
-  <p class="m-t-3 text-muted font-italic">
-  <small>{% if category_content %} 文章分類：</small>{{ category_content }}<small>{% endif %}{{ tags_content }}</small>
-  </p>
 </article>

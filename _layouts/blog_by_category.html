@@ -23,16 +23,11 @@ layout: default
           <div class="list-group">
           {% endif %}
         {% endunless %}
-        <a href="{{ post.url }}" class="list-group-item">
-          <h4 class="list-group-item-heading h6">{{ post.title }}</h4>
-        </a>
-        {% if post.description %}
-          <p class="post-description">
-          {{ post.description }}
-          </p>
-        {% endif %}
+        {% include post_summary.html post=post %}
         {% if forloop.last %}
             </div>
+          {% else %}
+            <hr>
           {% endif %}
         {% endfor %}
       {% else %}

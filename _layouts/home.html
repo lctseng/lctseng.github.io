@@ -3,23 +3,10 @@ layout: default
 ---
 <ul class="post-list">
   {% for post in paginator.posts %}
-    <li>
-      {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-      <span class="post-meta">{{ post.date | date: date_format }}</span>
-
-      <h2>
-        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-      </h2>
-      {% if post.description %}
-        <p class="post-description">
-        {{ post.description }}
-        </p>
-      {% endif %}
-      <div class="post-content">
-        {{ post.content }}<br>
-      </div>
+    <li class="major">
+      {% include post_summary.html post=post %}
     </li>
-    <hr />
+    <hr>
   {% endfor %}
   {% include pager.html %}
 </ul>      

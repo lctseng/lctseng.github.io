@@ -7,7 +7,10 @@
     <div id="container">
       <div class="inner">
 
-        {% include common_header.html %}
+        <header>
+          <a href="/"><h1>{{ site.title | default: site.github.repository_name }}</h1></a>
+          <h2>{{ site.description | default: site.github.project_tagline }}</h2>
+        </header>
 
         <section id="main-content">
           {{ content }}

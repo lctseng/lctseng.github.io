@@ -23,7 +23,9 @@ twitter_username: lctseng
 github_username:  lctseng
 lang: "zh-TW"
 
-paginate: 3
+paginate: 10
+
+date_format: "%b %-d, %Y"
 
 # Build settings
 markdown: kramdown
