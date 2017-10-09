@@ -11,7 +11,7 @@
     </p>
   {% endif %}
   {% if post.banner_image  %}
-    <img src={{ post.banner_image }}>
+    <img class="post-banner" src={{ post.banner_image }}>
   {% endif %}
   {% include category_and_tags.html post=post %}
 </div>
