@@ -10,8 +10,8 @@
     {{ post.description }}
     </p>
   {% endif %}
-  {% if post.banner_image  %}
-    <img class="post-banner" src={{ post.banner_image }}>
+  {% if post.image  %}
+    <img class="post-banner" src={{ post.image }}>
   {% endif %}
   {% include category_and_tags.html post=post %}
 </div>

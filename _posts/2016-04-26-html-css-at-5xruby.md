@@ -5,7 +5,7 @@ category: experience
 tags: [5xruby, web-develop, course]
 title: 深入淺出立即上手的HTML網頁設計@5xRuby
 description: 這是我在五倍紅寶石實習時參與上課的心得，這一次的課程是基本的HTML與CSS使用。
-banner_image: https://imgur.com/YuOvESZ.png
+image: https://imgur.com/YuOvESZ.png
 ---
 
 結束了總時數20小時的HTML/CSS課程，
