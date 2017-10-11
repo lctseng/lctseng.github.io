@@ -14,13 +14,16 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Henry Tseng's Digital Space
-email: lctseng.blog@cs.nctu.edu.tw
+email: lctseng.public@cs.nctu.edu.tw
 description: >- # this means to ignore newlines until "baseurl:"
   Welcome to Henry Tseng (a.k.a lctseng)'s blog!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "lctseng.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: lctseng
 github_username:  lctseng
+facebook_username: computerhenry321
+linkedin_username: '亮齊-曾-65418310a'
+
 lang: "zh-TW"
 
 paginate: 10
