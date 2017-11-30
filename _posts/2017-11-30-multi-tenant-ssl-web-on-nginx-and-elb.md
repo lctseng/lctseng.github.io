@@ -151,13 +151,13 @@ aws elb set-load-balancer-policies-for-backend-server --load-balancer-name my-lo
 ```
 
 完成 ELB 的設定後，我們也需要更動 Nginx 的設定檔。具體的設定可以參考這篇官方文章：[Configuring NGINX to Accept the PROXY protocol](https://www.nginx.com/resources/admin-guide/proxy-protocol/)。這裡提出幾個重要的步驟：
-1. 設定 Nginx 接受 proxy_protocol 的連線
+1. 設定 Nginx 接受 `proxy_protocol` 的連線
 
 ```nginx
 server {
     listen 80   proxy_protocol;
     listen 443  ssl proxy_protocol;
-    ...
+    # ...
 }
 ```
 
@@ -165,9 +165,9 @@ server {
 
 ```nginx    
 server {
-    ...
+    # ...
     set_real_ip_from 10.0.0.0/8;
-    ...
+    # ...
 }
 ```
 
@@ -175,7 +175,7 @@ server {
 
 ```nginx
 server {
-    ...
+    # ...
     real_ip_header proxy_protocol;
 }
 ```
