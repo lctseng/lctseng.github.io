@@ -140,7 +140,7 @@ location / {
 }  
 ``` 
 
-在失去 ELB 提供傳統 HTTP `$proxy_add_x_forwarded_for`後，我們必須要使用別的方式讓 ELB 把客戶端 IP 的資訊轉交到 Nginx 手上。幸好對於純 TCP 的 listener，我們可以透過使用「TCP Proxy」這個技術，來讓純 TCP 的 Load Balancer 可以把 IP 資訊記錄在連線中。可惜在筆者轉寫此文章時，AWS Web Console 仍未支援 TCP Proxy 的設定，因此要使用這項功能必須透過 AWS 的 Command Line Tool: [aws-cli](https://aws.amazon.com/tw/cli/) 來達成。 
+在失去 ELB 提供傳統 HTTP `$proxy_add_x_forwarded_for`後，我們必須要使用別的方式讓 ELB 把客戶端 IP 的資訊轉交到 Nginx 手上。幸好對於純 TCP 的 listener，我們可以透過使用「TCP Proxy」這個技術，來讓純 TCP 的 Load Balancer 可以把 IP 資訊記錄在連線中。可惜在筆者撰寫此文章時，AWS Web Console 仍未支援 TCP Proxy 的設定，因此要使用這項功能必須透過 AWS 的 Command Line Tool: [aws-cli](https://aws.amazon.com/tw/cli/) 來達成。 
 
 如果讀者已經安裝並設置好`aws-cli`，再來就是透過它設定我們的 ELB `my-load-balancer` 來啟用 TCP Proxy。啟用的指令如下：
 
