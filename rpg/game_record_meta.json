@@ -1,4 +1,4 @@
 {
   "entry_point": "https://test-blog-2.herokuapp.com/game_records",
-  "entry_point_dev": "http://140.112.90.95:3000/game_records"
+  "entry_point_dev": "https://covart-lctseng.csie.org/game_records"
 }
