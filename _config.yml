@@ -21,7 +21,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "lctseng.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: lctseng
 github_username:  lctseng
-facebook_username: computerhenry321
+facebook_username: tseng.liang.chi
 linkedin_username: '亮齊-曾-65418310a'
 
 lang: "zh-TW"
